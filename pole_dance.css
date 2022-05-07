@@ -1,0 +1,839 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: normal;
+    --offset: 20px; /*значение отступов между колонками*/
+    --orange-color:#E89B2B;
+    --white-color:#FFFFFF;
+    --grey-color:#B9B5BD; /*цвет текста меню навигации*/
+    --background-color:#202021;
+    --dark-orange-color:#C88930;
+    --icon-color:#B3AEAF;
+}
+
+header {
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: top center;
+    border-bottom: 6px solid var(--orange-color);
+}
+
+.header_container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;   
+}
+
+.header_navigation_background {
+    background: rgba(18, 17, 17, 0.82);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header_navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_name {    
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 28px;
+    color: var(--white-color);
+    padding: 5px;
+}
+
+.bold_text {    
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 43px; 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--white-color);
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_menu_block {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--grey-color);
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey-color);
+}
+
+a:visited {
+    color: var(--orange-color);
+}
+
+a:active {
+    color: var(--dark-orange-color);
+}
+
+.mobile_menu {
+    display: none;
+    position: absolute;
+}
+
+.header_basic_container {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.81) 2%, rgba(0, 0, 0, 0.589424) 89.15%, rgba(0, 0, 0, 0) 114.5%);
+    width: 60%;
+    display: flex;
+    padding: 50px 15px;
+}
+
+.basic_container_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 100px 20px;
+}
+
+.circle_icon {
+    color: var(--white-color);
+    padding: 5px;
+}
+
+img{
+    padding: 3px;   
+}
+
+.container_right {
+    width: 80%;
+    padding: 50px 0 70px 20px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 81px;
+    color: var(--white-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.basic_container_text {    
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--white-color);
+    padding: 30px 0 20px;
+}
+
+.button_container {
+    display: flex;
+}
+
+button {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px; 
+}
+
+.header_button {
+    background-color: rgba(28,28,28,0);
+    border: 2px solid #BEBEC8;       
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;    
+    color: var(--white-color);
+    padding: 5px 20px;
+}
+
+.color_text {
+    color: var(--orange-color);
+}
+
+.special_offer {
+    padding: 100px 0 0;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--white-color);
+}
+
+.special_offer_text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--white-color);
+    padding: 15px 0;
+}
+
+.pole_dance_background {
+    background-color: var(--background-color);
+    border-bottom: 7px solid var(--orange-color);
+}
+
+.pole_dance_container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    padding: 100px 15px;    
+}
+
+.pole_dance {    
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.pole_dance_title {
+    padding: 0 0 80px 100px;
+    display: flex;   
+}
+
+.pole_dance_title_1 {
+    font-weight: 600;
+    font-size: 83px;
+    line-height: 82px;
+    color: rgba(255, 255, 255, 0.14);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pole_dance_title_2 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 34px;
+    color: var(--white-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: -30px 0 0 20px;    
+}
+
+.boldtext {
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 29px;
+    color: var(--white-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pole_dance_text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--white-color);
+    padding: 30px 10px;
+    
+}
+
+.scroll {
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px 15px;
+}
+
+.pole_dance_content {
+    display: flex;
+    flex-direction: column; 
+    width: 60%;
+}
+
+.pole_dance_image {  
+    background-image: url(images/Rectangle4мини.png);
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 40%;
+}   
+    
+
+.pole_dance_time_container {   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pole_dance_time {
+    display: flex; 
+    justify-content: space-between;
+    border: 1px solid var(--orange-color); 
+    width: calc(100% / 2 - var(--offset));
+    margin: 30px calc(var(--offset) / 2);  
+}
+
+.time_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 44px;
+    color: var(--white-color);
+    width: 100%;
+    padding: 5px;
+}
+
+.button_orange {   
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 41px;   
+    color: var(--white-color);
+    background: var(--orange-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--orange-color);
+}
+
+.button_orange:hover {
+    background: var(--dark-orange-color);
+}
+
+.banner {
+    background-image: url(images/banner1.png);
+    background-size: cover;    
+    background-position: top right;
+    margin: 50px 0;   
+    border-bottom: 4px solid var(--orange-color); 
+    padding: 30px 50px; 
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--white-color); 
+    margin-bottom: 40px;   
+}
+
+.record {
+    padding: 10px 40px;
+}
+
+.other_destinations {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 38px;
+    color: var(--white-color);
+    background-color: rgba(28,28,28,0); 
+    border: 1px solid var(--white-color);
+    width: max-content;
+}
+
+.button {
+    display: flex;
+    justify-content: right;
+}
+
+footer {
+    background-image: url(images/background2.png);
+    background-size: cover; 
+    background-position: top center; 
+    padding: 40px 0 70px; 
+}
+
+.footer_container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%; 
+    padding: 50px 15px;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: end;   
+}
+
+.footer_title {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    color: var(--white-color);
+    margin-top: 10px;
+}
+
+.footer_icon_container {
+    padding: 10px;
+}
+
+.footer_icon {
+    color: var(--icon-color);
+    margin: 0 5px;
+    font-size: 30px;
+}
+
+.footer_bottom {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%; 
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.footer_menu {
+    padding-top: 20px;
+}
+
+.footer_menu_block {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--grey-color);
+}
+
+.footer_contacts {
+    display: inline-block; 
+    margin-left: 170px;   
+}
+
+.footer_contact {
+    display: flex;
+    width: max-content;
+    padding-top: 20px;
+}
+
+.footer_adress {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+    color: var(--white-color); 
+    margin-right: 30px;  
+}
+
+.footer_adress_block {
+    margin: 10px;
+}
+
+.footer_phone {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    color: var(--white-color);
+}
+
+.footer_phone_block {
+    margin: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    header {
+        background-image: url(images/backgroundмини.png);
+        background-size: cover;
+        background-position: top right;
+    }
+    
+    
+    .header_name {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    
+    .header_menu {       
+        display: none;
+    }
+    
+    .mobile_menu {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropbtn {
+        background:  rgba(28,28,28,0);
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        width: 130px;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+        background-color:  rgba(28,28,28,0);
+    }
+    
+    .mobile_menu_content {
+        display: none;
+        position: absolute;
+        background-color: rgba(28,28,28,0);;
+        min-width: 100px;
+        overflow: hidden;
+        font-size: 20px;
+    }
+    
+    .mobile_menu_content a {
+        color: var(--grey-color);
+        padding: 12px 16px;    
+        display: block;
+    }
+      
+    .mobile_menu a:hover {background-color: var(--dark-orange-color);}
+      
+    .show {display: block;}
+    
+    .header_basic_container {
+        width: 100%;
+    }
+    
+    .container_right {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    .basic_container_text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    .special_offer_text{
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    button {
+        font-size: 22px;
+        line-height: 22px; 
+    }
+    
+    .pole_dance_title {
+        padding: 20px 0; 
+        justify-content: center;   
+    }
+  
+    .pole_dance_title_1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+  
+    .pole_dance_title_2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .pole_dance_container {
+        padding: 30px 15px;
+    }
+
+    .pole_dance {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .pole_dance_content {
+        width: 100%;
+    }
+
+    .pole_dance_image {
+        width: 100%;
+        height: 500px;
+    }
+
+    .pole_dance_text {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .pole_dance_time {
+        width: 100%;
+    }
+
+    .time_text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .button_orange {
+        font-size: 28px;
+    }
+
+    .banner {
+        background-image: url(images/banner1мини.png);
+        background-size: cover; 
+        background-position: right;   
+        padding: 20px 15px;
+    }
+
+    h5 {
+        font-size: 22px;
+        line-height: 20px;
+    }
+  
+    .record {
+        font-size: 22px;
+        line-height: 20px;
+        padding: 10px 20px;
+    }
+
+    .other_destinations {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .footer_title {
+        font-size: 20px;
+        line-height: 20px;
+      }
+  
+     .footer_icon {
+        font-size: 18px;
+      }
+  
+     .footer_bottom {
+        flex-direction: column;
+      }
+  
+     .footer_menu_block {
+        font-size: 18px;
+        line-height: 26px;
+      }
+  
+     .footer_contacts { 
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;   
+      }
+  
+     .footer_adress {
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 10px; 
+      }
+  
+     .footer_contact {
+        display: flex;    
+        padding-top: 30px;
+        width: max-content;
+      }
+  
+     .footer_phone {
+        font-size: 14px;
+        line-height: 20px;
+      }  
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    header {
+        background-image: url(images/backgroundмини.png);
+        background-size: cover;
+        background-position: top right;
+    }
+      
+    .header_name {
+        font-size: 22px;
+        line-height: 22px;
+    }
+      
+    .header_menu {       
+        display: none;
+    }
+      
+    .mobile_menu {
+        position: relative;
+        display: inline-block;
+    }
+      
+    .dropbtn {
+        background:  rgba(28,28,28,0);
+        color: white;
+        padding: 10px;
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+        width: 130px;
+    }
+      
+    .dropbtn:hover, .dropbtn:focus {
+        background-color:  rgba(28,28,28,0);
+    }
+      
+    .mobile_menu_content {
+        display: none;
+        position: absolute;
+        background-color: rgba(28,28,28,0);;
+        min-width: 100px;
+        overflow: hidden;
+        font-size: 20px;
+    }
+      
+    .mobile_menu_content a {
+        color: var(--grey-color);
+        padding: 12px 16px;    
+        display: block;
+    }
+        
+    .mobile_menu a:hover {background-color: var(--dark-orange-color);}
+        
+    .show {display: block;}
+  
+    .header_basic_container {
+        width: 100%;
+    }
+      
+    .container_right {
+        width: 70%;
+    }
+  
+    h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+  
+    .basic_container_text {
+        font-size: 22px;
+        line-height: 22px;
+    }
+  
+    .special_offer_text{
+        font-size: 18px;
+        line-height: 18px;
+    }
+  
+    h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    button {
+        font-size: 24px;
+        line-height: 24px; 
+    }
+
+    .pole_dance_title {
+        padding: 20px 0; 
+        justify-content: center;   
+    }
+  
+    .pole_dance_title_1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+  
+    .pole_dance_title_2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .pole_dance_container {
+        padding: 30px 15px;
+    }
+
+    .pole_dance {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .pole_dance_content {
+        width: 100%;
+    }
+
+    .pole_dance_image {
+        width: 80%;
+        height: 700px;
+    }
+
+    .pole_dance_text {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .pole_dance_time_container {
+        justify-content: center;
+    }
+
+    .pole_dance_time {
+        width: 70%;
+    }
+
+    .time_text {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .button_orange {
+        font-size: 28px;
+    }
+
+    .banner {
+        background-image: url(images/banner1мини.png);
+        background-size: cover; 
+        background-position: right;   
+        padding: 20px 15px;
+    }
+
+    h5 {
+        font-size: 32px;
+        line-height: 28px;
+    }
+  
+    .record {
+        font-size: 22px;
+        line-height: 20px;
+        padding: 10px 20px;
+    }
+
+    .other_destinations {
+        font-size: 32px;
+        line-height: 26px;
+    }
+
+    .footer_title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+  
+    .footer_icon {
+        font-size: 20px;
+    }
+  
+    .footer_bottom {
+        flex-direction: column;
+    }
+  
+    .footer_menu_block {
+        font-size: 20px;
+        line-height: 30px;
+      }
+  
+     .footer_contacts { 
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;   
+      }
+  
+     .footer_adress {
+        font-size: 22px;
+        line-height: 26px;
+         
+      }
+  
+     .footer_contact {
+        display: flex; 
+        justify-content: space-between;   
+        padding-top: 30px;
+        
+      }
+  
+     .footer_phone {
+        font-size: 20px;
+        line-height: 26px;
+      }  
+  
+}
+
